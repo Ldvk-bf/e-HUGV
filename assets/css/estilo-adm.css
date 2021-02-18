@@ -1,0 +1,27 @@
+/* Configurações para as tags */
+
+/* configurações para a classes */
+.group-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 0px;
+    margin: 10px 20px;
+    width: 350px;
+}
+
+.divisiao-superior {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0px;
+    align-items: center;
+}
+
+/* configuração para IDs */
+#pesquisa {
+    width: 250px;
+    margin: 20px 20px;
+}
