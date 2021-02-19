@@ -17,6 +17,7 @@
         header("Location: $newURL.php?flag=".$flag);
         die();
     }
+    
 ?>
 
 <html lang="pt-br" class="fullHeight"><head>

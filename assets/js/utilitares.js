@@ -25,9 +25,9 @@ function mascara(i,t){
       if (v.length == 10) i.value += "/";
       if (v.length == 15) i.value += "-";
    } else if(t == "telefone"){
-      i.setAttribute("maxlength", "16");
+      i.setAttribute("maxlength", "15");
       if(v.length == 1) i.value = "("+i.value;
       if (v.length == 3) i.value += ") ";
-      if (v.length == 11) i.value += "-";
+      if (v.length == 10) i.value += "-";
    }
 }

@@ -1,10 +1,14 @@
 <?php
     include '../../assets/php/conexao.php';
+    if(count($_POST) > 0) {
+        $query = 'insert into medico (nome,cpf,telefone,crm) values ("'.$_POST['nome'].'","'.$_POST['cpf'].'","'.$_POST['telefone'].'","'.$_POST['crm'].'")';
+        $return = $conexao->exec($query);
+    }
 
     $query = 'select * from medico';
     $stmt = $conexao->query($query);
     $lista = $stmt->fetchAll();
-?>
+?>  
 
 
 <html lang="pt-br" class="fullHeight"><head>
@@ -32,6 +36,7 @@
     <div class="screen">
         <div class="container-sm ml-5" id="content-main">
             <div class="container divisiao-superior">
+                <a href="../acesso.php?count=1" class="btn btn-outline-success m-3"> Voltar</a>
                 <a href="detalhes_medico.php?count=2&idMedico=0" class="btn btn-success" style="height: 2.5rem;"> adicionar médico</a>
                 <input type="text" placeholder="pesquisar pelo nome" class="form-control" id="pesquisa">
             </div>

@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../../assets/css/estilos.css">
     
     <!-- MY detalhe -->
-    <link rel="stylesheet" href="../../assets/css/estilo-detalhe.css">
+    <link rel="stylesheet" href="../../assets/css/estilo-detalhes.css">
 
 
     <title>e-HUGV | Detalhes medico</title>
@@ -27,17 +27,34 @@
         <div class="container-sm ml-auto" id="content-main">
             <div class="row">
                 <div class="col-md-6 col-sm-12">
-                    <h3>Adicionar Medico</h3>
-                    <h3>Alterar Medico</h3>
+                    <h4 style="padding:5px;">Novo Medico</h4>
 
-                    <form action="" method="post">
-                        <input type="text" class="form-control" placeholder="Nome">
-                        <input type="text" class="form-control" placeholder="cpf" oninput="mascara(this, 'cpf')">
-                        <input type="text" class="form-control" placeholder="telefone" oninput="mascara(this, 'telefone')">
+                    <form class="my-card form-group" action="acesso_medicos.php?count=2" method="post">
+                        <div class="form-floating mb-3">
+                            <input name="nome" type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Nome</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input name="cpf" type="text" class="form-control" id="floatingInput"  placeholder="111.111.111-11" oninput="mascara(this, 'cpf')">
+                            <label for="floatingInput">Cpf</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input name="telefone" type="text" class="form-control" id="floatingInput" placeholder="(92) 99614-0802" oninput="mascara(this, 'telefone')">
+                            <label for="floatingInput">Telefone</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input name="crm" type="text" class="form-control" id="floatingInput" placeholder="4515213">
+                            <label for="floatingInput">Crm</label>
+                        </div>
+                        <div class="row">
+                            <a href="acesso_medicos.php?count=2" class="btn btn-success col-2 m-2 p-2"> Voltar</a>
+                            <button type="submit" class="btn btn-outline-success col-2 m-2 p-2"> Salvar</button>
+                            <button class="btn btn-success col-2 m-2 p-2"> Deletar</button>
+                        </div>
                     </form>
                 </div>
                 <div class="col-md-6 col-sm-12">
-                One of three columns
+                    <img src="../../assets/images/DetailScreen.png" alt="">
                 </div>
             </div>
         </div>
