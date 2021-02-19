@@ -7,15 +7,14 @@
 .screen {
     position: relative;
     top: 100px;
-
+    
 }
 
 
 /* Configuração para os componetes*/
 body, html {
     font: 16px  ;
-    background: #FFF;
-    color: #777;
+    background: rgb(242, 246, 249);
     margin-bottom: 100px;
 }
 
@@ -82,7 +81,6 @@ a#feed:hover{
 }
 
 #Content-Header {
-    background: rgb(242, 246, 249);
+    background: #FFF;
     box-shadow: 0px 5px 10px -4px #ccc;
 }
-

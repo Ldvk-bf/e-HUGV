@@ -1,0 +1,14 @@
+/* configurações para os components */
+form {
+    margin-top: 30px;
+}
+
+/* Configurações para CLASSs */
+
+.col {
+    border: 1px solid red
+}
+
+.form-control {
+    margin: 10px 0px;
+}

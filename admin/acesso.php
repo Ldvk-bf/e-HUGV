@@ -28,7 +28,7 @@
     <link href="../assets/css/bootstrap/bootstrap.min.css" rel="stylesheet">
 
     <!-- MY padrão paginas -->
-    <link rel="stylesheet" href="../assets/css/estilo.css">
+    <link rel="stylesheet" href="../assets/css/estilos.css">
     
     <!-- css para a tela inicial do adm -->
     <link rel="stylesheet" href="../assets/css/estilo-adm.css">

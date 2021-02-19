@@ -1,5 +1,5 @@
 <?php
-    include '../assets/php/conexao.php';
+    include '../../assets/php/conexao.php';
 
     $query = 'select * from medico';
     $stmt = $conexao->query($query);
@@ -13,42 +13,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="../assets/css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/css/bootstrap/bootstrap.min.css" rel="stylesheet">
 
     <!-- MY padrão paginas -->
-    <link rel="stylesheet" href="../assets/css/estilo.css">
+    <link rel="stylesheet" href="../../assets/css/estilos.css">
     
     <!-- css para a tela inicial do adm -->
-    <link rel="stylesheet" href="../assets/css/estilo-adm.css">
+    <link rel="stylesheet" href="../../assets/css/estilo-adm.css">
 
     <title>e-HUGV | Acesso Adm</title>
   </head>
   <body>
 
     <!-- Cabeçalho -->
-    <header>
-        <nav class="navbar navbar-expand-md fixed-top navbar-light " id="Content-Header">
-            <div class="container" id="menu">
-                <a class="navbar-brand" href="/index.html">
-                    <img src="../assets/images/Logo.png" alt="" class="image-logo">
-                    <div class="title">e-HUGV</div>
-                </a>
-
-                <h3 id="page-inicial">Seja Bem-vindo</h3>
-
-                <a class="navbar-brand" href="/index.html">
-                    <img src="../assets/images/Logo3.png" alt="" class="image-logo">
-                    <div class="title">UFAM</div>
-                </a>
-            </div>
-        </nav>
-    </header>
+    <?php  include '../../assets/php/menu.php';?>
 
     <!-- Parte principal -->
     <div class="screen">
         <div class="container-sm ml-5" id="content-main">
             <div class="container divisiao-superior">
-                <button action="" class="btn btn-success" style="height: 2.5rem;"> adicionar médico</button>
+                <a href="detalhes_medico.php?count=2&idMedico=0" class="btn btn-success" style="height: 2.5rem;"> adicionar médico</a>
                 <input type="text" placeholder="pesquisar pelo nome" class="form-control" id="pesquisa">
             </div>
             <table class="table">

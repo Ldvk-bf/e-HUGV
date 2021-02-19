@@ -9,30 +9,14 @@
     <link href="assets/css/bootstrap/bootstrap.min.css" rel="stylesheet">
 
     <!-- MY Css -->
-    <link rel="stylesheet" href="assets/css/estilo.css">
+    <link rel="stylesheet" href="assets/css/estilos.css">
 
     <title>e-HUGV | Inicio</title>
   </head>
   <body>
 
     <!-- Cabeçalho -->
-    <header>
-        <nav class="navbar navbar-expand-md fixed-top navbar-light " id="Content-Header">
-            <div class="container" id="menu">
-                <a class="navbar-brand" href="/index.html">
-                    <img src="assets/images/Logo.png" alt="" class="image-logo">
-                    <div class="title">e-HUGV</div>
-                </a>
-
-                <h3 id="page-inicial">Pagina Inicial</h3>
-                
-                <a class="navbar-brand" href="/index.html">
-                    <img src="assets/images/Logo3.png" alt="" class="image-logo">
-                    <div class="title">UFAM</div>
-                </a>
-            </div>
-        </nav>
-    </header>
+    <?= include 'assets/php/menu.php' ?>
 
     <!-- Parte principal -->
     <div class="screen">
