@@ -1,8 +1,21 @@
 <?php
     include '../../assets/php/conexao.php';
     if(count($_POST) > 0) {
-        $query = 'insert into medico (nome,cpf,telefone,crm) values ("'.$_POST['nome'].'","'.$_POST['cpf'].'","'.$_POST['telefone'].'","'.$_POST['crm'].'")';
-        $return = $conexao->exec($query);
+        if(!isset($_POST['deletar'])){
+            if($_POST['save'] == 0){
+                $query = 'insert into medico (nome,cpf,telefone,crm,senha) values ("'.$_POST['nome'].'","'.$_POST['cpf'].'","'.$_POST['telefone'].'","'.$_POST['crm'].'","'.$_POST['senhaMedico'].'")';
+                $return = $conexao->exec($query);
+            } else {
+                $query = 'Update medico set nome="'.$_POST['nome'].'",cpf="'.$_POST['cpf'].'",telefone="'.$_POST['telefone'].'",crm="'.$_POST['crm'].'",senha="'.$_POST['senhaMedico'].'" where id='.$_POST['save'];
+                $return = $conexao->exec($query);
+            }
+        } else {
+            if($_POST['deletar'] != 0) {
+                $query = 'delete from medico where id = '.$_POST["deletar"];
+                echo $query;
+                $stmt = $conexao->exec($query);
+            }
+        }
     }
 
     $query = 'select * from medico';
@@ -20,10 +33,10 @@
     <link href="../../assets/css/bootstrap/bootstrap.min.css" rel="stylesheet">
 
     <!-- MY padrão paginas -->
-    <link rel="stylesheet" href="../../assets/css/estilos.css">
+    <link rel="stylesheet" href="../../assets/css/estilo.css">
     
     <!-- css para a tela inicial do adm -->
-    <link rel="stylesheet" href="../../assets/css/estilo-adm.css">
+    <link rel="stylesheet" href="../../assets/css/estilo-adms.css">
 
     <title>e-HUGV | Acesso Adm</title>
   </head>
@@ -48,17 +61,19 @@
                         <th>cpf</th>
                         <th>telefone</th>
                         <th>crm</th>
+                        <th>senha</th>
                     </tr>
                 </tHead>
                 <tbody>
                     <?php 
                         foreach($lista as $medico) {
                             echo '<tr>';
-                                echo '<td>'.$medico['id'].'</td>';
-                                echo '<td>'.$medico['nome'].'</td>';
+                                echo '<td><a href="detalhes_medico.php?count=2&idMedico='.$medico['id'].'">'.$medico['id'].'</a></td>';
+                                echo '<td><a href="detalhes_medico.php?count=2&idMedico='.$medico['id'].'">'.$medico['nome'].'</a></td>';
                                 echo '<td>'.$medico['cpf'].'</td>';
                                 echo '<td>'.$medico['telefone'].'</td>';
                                 echo '<td>'.$medico['crm'].'</td>';
+                                echo '<td>'.$medico['senha'].'</td>';
                             echo '</tr>';
                         }
                     ?>

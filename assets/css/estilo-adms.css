@@ -1,4 +1,12 @@
 /* Configurações para as tags */
+a {
+    text-decoration: none;
+    color: #87D37C;
+}
+a:hover {
+    color: #87D37C;
+    text-decoration: underline;
+}
 
 /* configurações para a classes */
 .group-card {

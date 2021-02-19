@@ -9,7 +9,7 @@
     <link href="assets/css/bootstrap/bootstrap.min.css" rel="stylesheet">
 
     <!-- MY Css -->
-    <link rel="stylesheet" href="assets/css/estilos.css">
+    <link rel="stylesheet" href="assets/css/estilo.css">
 
     <title>e-HUGV | Inicio</title>
   </head>

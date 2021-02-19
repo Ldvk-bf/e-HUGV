@@ -29,10 +29,10 @@
     <link href="../assets/css/bootstrap/bootstrap.min.css" rel="stylesheet">
 
     <!-- MY padrão paginas -->
-    <link rel="stylesheet" href="../assets/css/estilos.css">
+    <link rel="stylesheet" href="../assets/css/estilo.css">
     
     <!-- css para a tela inicial do adm -->
-    <link rel="stylesheet" href="../assets/css/estilo-adm.css">
+    <link rel="stylesheet" href="../assets/css/estilo-adms.css">
 
     <title>e-HUGV | Acesso Adm</title>
   </head>

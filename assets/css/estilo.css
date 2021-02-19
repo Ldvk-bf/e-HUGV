@@ -56,12 +56,7 @@ body, html {
 
 
 /* Configuração para os IDs */
-a#ini:hover,
-a#dev:hover,
-a#feed:hover{
-    color:#3d8bfd;
-    transition: color .15s;
-}
+
 
 /* inicio menu da pagina */
 
