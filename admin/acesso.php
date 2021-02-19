@@ -38,24 +38,8 @@
   <body>
 
     <!-- Cabeçalho -->
-    <header>
-        <nav class="navbar navbar-expand-md fixed-top navbar-light " id="Content-Header">
-            <div class="container" id="menu">
-                <a class="navbar-brand" href="/index.html">
-                    <img src="../assets/images/Logo.png" alt="" class="image-logo">
-                    <div class="title">e-HUGV</div>
-                </a>
-
-                <h3 id="page-inicial">Seja Bem-vindo</h3>
-
-                <a class="navbar-brand" href="/index.html">
-                    <img src="../assets/images/Logo3.png" alt="" class="image-logo">
-                    <div class="title">UFAM</div>
-                </a>
-            </div>
-        </nav>
-    </header>
-
+    <?php  include '../assets/php/menu.php';?>
+     
     <!-- Parte principal -->
     <div class="screen">
         <div class="container-sm ml-5" id="content-main">
@@ -68,7 +52,7 @@
                         </div>
                         <div class="card-text text-center">
                             Acesso para informações associadas aos medicos<br><br>
-                            <a href="medico/acesso_medicos.php" class="btn btn-outline-success">Acessar</a>
+                            <a href="medico/acesso_medicos.php?count=2" class="btn btn-outline-success">Acessar</a>
                         </div>
                     </div>
                 </div>

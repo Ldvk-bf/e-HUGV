@@ -16,7 +16,7 @@
             <img src="../assets/images/logo.png" alt="" class="logo">
             <h4 class="title" style="margin-bottom: 60px;">e-HUGV</h4>
 
-            <form action="acesso.php" method="post" class="form-group">
+            <form action="acesso.php?count=1" method="post" class="form-group">
                 <div class="input-box">
                     <input name="usuario" type="text" tabindex="1" placeholder="Jose augusto" class="form-control">
                     <label class="form-label">Usuario</label>
