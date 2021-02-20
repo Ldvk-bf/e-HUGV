@@ -14,7 +14,7 @@
 
     <div id="content-main">
             <img src="../assets/images/logo.png" alt="" class="logo">
-            <h4 class="title" style="margin-bottom: 60px;">e-HUGV</h4>
+            <h4 class="title" style="margin-bottom: 60px;">e-HUGV | Adminstrador</h4>
 
             <form action="acesso.php?count=1" method="post" class="form-group">
                 <div class="input-box">

@@ -44,7 +44,7 @@
                         <div class="card-text text-center">
                             Acesso destinado aos familiares <br>
                             e pacientes do HUGV <br><br>
-                            <a href="" class="btn btn-outline-success">Acesso familiar</a>
+                            <a href="login_paciente.html" class="btn btn-outline-success">Acesso familiar</a>
                         </div>
                     </div>
                 </div>

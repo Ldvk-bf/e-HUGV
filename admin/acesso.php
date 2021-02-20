@@ -53,7 +53,7 @@
                         </div>
                         <div class="card-text text-center">
                             Acesso para informações associadas aos medicos<br><br>
-                            <a href="medico/acesso_medicos.php?count=2" class="btn btn-outline-success">Acessar</a>
+                            <a href="../medico/acesso_medicos.php?count=1" class="btn btn-outline-success">Acessar</a>
                         </div>
                     </div>
                 </div>
@@ -64,7 +64,7 @@
                         </div>
                         <div class="card-text text-center">
                             Acesso para informações associadas aos pacientes<br><br>
-                            <a href="#" class="btn btn-outline-success">Acessar</a>
+                            <a href="../paciente/acesso_pacientes.php?count=1" class="btn btn-outline-success">Acessar</a>
                         </div>
                     </div>
                 </div>

@@ -17,7 +17,7 @@
 
             <h3 id="page-inicial">Seja Bem-vindo</h3>
 
-            <a class="navbar-brand" href="/e-HUGV/index.php">
+            <a class="navbar-brand" href="/e-HUGV/admin/login.php">
                 <img src=
                     <?php
                         $string="";
