@@ -13,7 +13,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap CSS -->
-    <link href="../assets/css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
 
     <!-- MY padrão paginas -->
     <link rel="stylesheet" href="../assets/css/estilo.css">
@@ -33,7 +34,7 @@
                 <div class="col-md-6 col-sm-12">
                     <h4 style="padding:5px;">Novo Medico</h4>
 
-                    <form class="my-card form-group" action="acesso_medicos.php?count=2" method="post">
+                    <form class="my-card form-group" action="acesso_medicos.php?count=1" method="post">
                         <div class="form-floating mb-3">
                             <input name="nome" type="text" class="form-control" id="floatingInput" placeholder="name@example.com" value="<?php if(count($lista) > 0) echo $lista[0]['nome']; ?>">
                             <label for="floatingInput">Nome</label>
